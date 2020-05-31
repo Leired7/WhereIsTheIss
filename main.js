@@ -16,12 +16,14 @@ const myISSIcon = L.icon({
 const myCREWDRAGONIcon = L.icon({
   iconUrl: "./img/project.png",
   iconSize: [32, 32],
-  iconAnchor: [32, 32],
+  iconAnchor: [16, 16],
 });
 const markerISS = L.marker([0, 0], { icon: myISSIcon }).addTo(mymap);
 const markerCREWDRAGON = L.marker([0, 0], { icon: myCREWDRAGONIcon }).addTo(
   mymap
 );
+markerISS.bindPopup("Soy la ISS").openPopup();
+markerCREWDRAGON.bindPopup("Soy la CREW DRAGON").openPopup();
 
 const api_urlISS = "https://api.wheretheiss.at/v1/satellites/25544";
 
