@@ -30,7 +30,7 @@ p {
   font-size: 0.5em;
 }
 p.see-ISS {
-  margin: 0 0 0.2em 0;
+  margin: 0 0 0.8em 0.8em;
 }
 p.date {
   margin: 1em 0 0.5em 0.5em;
@@ -39,5 +39,15 @@ h5 {
   margin: 1em 0 0 0;
 }
 a {
-  font-size: 0.5em;
+  font-size: 0.8em;
+}
+a.spot_nasa {
+  margin: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  #issmap {
+    height: 500px;
+    width: 776px;
+  }
 }
