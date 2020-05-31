@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <!--NES.css file-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+    <title>🚀 Where is the ISS?</title>
+  </head>
+  <body>
+    <section class="card__satellite-data">
+      <h1 class="card__title">
+        Seguimiento efímero...
+      </h1>
+      <div class="nes-container with-title is-dark">
+        <p class="title">CREW DRAGÓN en su viaje a la ISS</p>
+        <div class="nes-table-responsive">
+          <table class="nes-table is-bordered is-dark">
+            <thead>
+              <tr>
+                <th>ISS</th>
+                <th>CREW DRAGON</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Altitud: <span id="altISS"></span>km</p>
+                </td>
+                <td>
+                  <p>Altitud: <span id="altCREWDRAGON"></span>km</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Latitud: <span id="latISS"></span>º</p>
+                </td>
+                <td>
+                  <p>Latitud: <span id="latCREWDRAGON"></span>º</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Longitud: <span id="lonISS"></span>º</p>
+                </td>
+                <td>
+                  <p>Longitud: <span id="lonCREWDRAGON"></span>º</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Velocidad (km/h): <span id="velISS"></span></p>
+                </td>
+                <td>
+                  <!-- <p>Velocity (km/h): <span id="velCREWDRAGON"></span></p> -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h5>¿Quieres ver pasar la ISS?</h5>
+          <p class="see-ISS">
+            Si te apuntas en esta página web, la Nasa te avisa cuando pase cerca
+            de tu localización.
+          </p>
+          <a href="https://spotthestation.nasa.gov/signup.cfm" target="_blank"
+            >Spot the station...</a
+          >
+          <p class="date"><span id="date"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <div id="issmap"></div>
+    <div>
+      Icons made by
+      <a
+        href="https://www.flaticon.com/authors/vectors-market"
+        title="Vectors Market"
+        >Vectors Market</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
