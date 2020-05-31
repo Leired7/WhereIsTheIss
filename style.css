@@ -44,10 +44,3 @@ a {
 a.spot_nasa {
   margin: 0 0 1rem 0;
 }
-
-@media screen and (min-width: 800px) {
-  #issmap {
-    height: 85%;
-    width: 95vw;
-  }
-}
