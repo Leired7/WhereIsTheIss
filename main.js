@@ -49,7 +49,7 @@ async function getISS() {
   document.getElementById("velISS").textContent = velocity.toFixed(2);
   return { latitude, longitude };
 }
-let whereIsISS = setInterval(getISS, 1000);
+let whereIsISS = setInterval(getISS, 2000);
 
 const api_urlCREWDRAGON =
   "https://www.n2yo.com/rest/v1/satellite/positions/45623/41.702/-0.37739/0/2/&apiKey=LEDQ9T-YFY9GR-D8SHLA-4GB3";
@@ -65,8 +65,5 @@ async function getCREWDRAGON() {
   document.getElementById("lonCREWDRAGON").textContent = satlongitude.toFixed(
     2
   );
-
-  console.log("data falcon", data);
-  console.log("await satlatitude", satlatitude);
 }
-let whereIsCREWDRAGON = setInterval(getCREWDRAGON, 1000);
+let whereIsCREWDRAGON = setInterval(getCREWDRAGON, 2000);
