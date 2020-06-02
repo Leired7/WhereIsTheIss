@@ -25,7 +25,9 @@ body,
 .card__header {
   display: flex;
 }
-
+.card__header > a {
+  margin: 0 1rem 0 0;
+}
 .card__title {
   font-size: 1em;
 }
@@ -48,9 +50,16 @@ a {
 a.spot_nasa {
   margin: 0 0 1rem 0;
 }
-
-@media screen and (min-width: 800px) {
+.card__map {
+  height: 300px;
+  width: auto;
+}
+@media screen and (min-width: 600px) {
   .card__header {
+    width: 600px;
+  }
+  #issmap {
+    height: 300px;
     width: 600px;
   }
 }
