@@ -8,22 +8,24 @@ const tiles = L.tileLayer(tilesUrl, { attribution });
 tiles.addTo(mymap);
 
 //Making a marker with a custom icon
-const myISSIcon = L.icon({
-  iconUrl: "./img/iss200.png",
-  iconSize: [50, 32],
-  iconAnchor: [25, 16],
-});
 const myCREWDRAGONIcon = L.icon({
   iconUrl: "./img/project.png",
   iconSize: [32, 32],
   iconAnchor: [16, 16],
 });
-const markerISS = L.marker([0, 0], { icon: myISSIcon }).addTo(mymap);
+const myISSIcon = L.icon({
+  iconUrl: "./img/iss200.png",
+  iconSize: [50, 32],
+  iconAnchor: [25, 16],
+});
+
 const markerCREWDRAGON = L.marker([0, 0], { icon: myCREWDRAGONIcon }).addTo(
   mymap
 );
-markerISS.bindPopup("Soy la ISS").openPopup();
+const markerISS = L.marker([0, 0], { icon: myISSIcon }).addTo(mymap);
+
 markerCREWDRAGON.bindPopup("Soy la CREW DRAGON").openPopup();
+markerISS.bindPopup("Soy la ISS").openPopup();
 
 const api_urlISS = "https://api.wheretheiss.at/v1/satellites/25544";
 
