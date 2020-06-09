@@ -13,7 +13,7 @@ body {
 html,
 body,
 #issmap {
-  height: 85%;
+  height: 90%;
   width: 95vw;
 }
 .card__satellite-data {
@@ -40,6 +40,13 @@ p.see-ISS {
 }
 p.date {
   margin: 1em 0 0.5em 0.5em;
+}
+.nes-container.with-title > .title {
+  font-size: 0.6em;
+  margin: 0;
+}
+.nes-container {
+  padding: 1rem;
 }
 h5 {
   margin: 1em 0 1em 0;

@@ -53,6 +53,10 @@ async function getISS() {
 }
 let whereIsISS = setInterval(getISS, 2000);
 
+/* 
+
+Código comentado hasta que la Crew Dragon vuelva a la Tierra (duración mínima de la misión será de 30 días y la máxima de 114 días)
+
 const api_urlCREWDRAGON =
   "https://www.n2yo.com/rest/v1/satellite/positions/45623/41.702/-0.37739/0/2/&apiKey=LEDQ9T-YFY9GR-D8SHLA-4GB3";
 async function getCREWDRAGON() {
@@ -69,3 +73,4 @@ async function getCREWDRAGON() {
   );
 }
 let whereIsCREWDRAGON = setInterval(getCREWDRAGON, 2000);
+ */
