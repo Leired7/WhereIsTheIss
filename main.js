@@ -40,6 +40,7 @@ async function getISS() {
     mymap.setView([latitude, longitude], 2);
     firstTime = false;
   }
+  markerCREWDRAGON.setLatLng([latitude, longitude]);
 
   let unix_timestamp = data.timestamp;
   let date = new Date(unix_timestamp * 1000).toLocaleString();
