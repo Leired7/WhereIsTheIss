@@ -40,7 +40,6 @@ async function getISS() {
     mymap.setView([latitude, longitude], 2);
     firstTime = false;
   }
-  markerCREWDRAGON.setLatLng([latitude, longitude]);
 
   let unix_timestamp = data.timestamp;
   let date = new Date(unix_timestamp * 1000).toLocaleString();
@@ -62,7 +61,6 @@ async function getCREWDRAGON() {
   const response = await fetch(api_urlCREWDRAGON);
   const data = await response.json();
   const { satlatitude, satlongitude, sataltitude } = await data.positions[0];
-  console.log();
   markerCREWDRAGON.setLatLng([satlatitude, satlongitude]);
 
   document.getElementById('altCREWDRAGON').textContent = sataltitude.toFixed(2);
@@ -70,5 +68,6 @@ async function getCREWDRAGON() {
   document.getElementById('lonCREWDRAGON').textContent = satlongitude.toFixed(
     2
   );
+  return { sataltitude, satlongitude };
 }
 let whereIsCREWDRAGON = setInterval(getCREWDRAGON, 2000);
