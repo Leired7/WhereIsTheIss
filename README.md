@@ -9,7 +9,6 @@ Los datos (longitud, latitud, velocidad, altura) los he conseguido de:
 https://api.wheretheiss.at (ISS) y https://www.n2yo.com/ (CREW DRAGON).
 
 El mapa es https://www.openstreetmap.org/ y lo he incluido con esta sencilla biblioteca https://leafletjs.com/. 
-La capa acuarela que tiene el mapa la ha creado Stamen http://maps.stamen.com/#watercolor/12/37.7707/-122.3783.
 
 El icono que he usado para la nave CREW DRAGON es de https://www.flaticon.com/authors/vectors-market.
 
