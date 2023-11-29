@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script
-      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
 
@@ -27,7 +28,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <style></style>
     <title>🚀 ¿Dónde está la ISS?</title>
   </head>
   <body>
@@ -53,9 +53,7 @@
         >
           <i class="nes-icon github is-small"></i>
         </a>
-        <h1 class="card__title">
-          Seguimiento efímero...
-        </h1>
+        <h1 class="card__title">Seguimiento efímero...</h1>
       </div>
       <div
         role="region"
@@ -63,18 +61,16 @@
         class="nes-container with-title is-dark"
       >
         <h2 class="title">
-          CREW DRAGON en su viaje a la Estación Espacial Internacional
+          CREW DRAGON ya hizo su viaje a la Estación Espacial Internacional
         </h2>
         <div class="nes-table-responsive">
           <table class="nes-table is-bordered is-dark">
             <caption>
-              Datos de velocidad, altura, longitud y latitud de la ISS y de la
-              SpaceX
+              Ahora solo seguimos a la ISS
             </caption>
             <thead>
               <tr>
                 <th>ISS</th>
-                <th>CREW DRAGON</th>
               </tr>
             </thead>
             <tbody>
@@ -82,25 +78,18 @@
                 <td>
                   <p>Altitud: <span id="altISS"></span>km</p>
                 </td>
-                <td>
-                  <p><span id="altCREWDRAGON"></span>km</p>
-                </td>
               </tr>
               <tr>
                 <td>
                   <p>Latitud: <span id="latISS"></span>º</p>
                 </td>
-                <td>
-                  <p><span id="latCREWDRAGON"></span>º</p>
-                </td>
+                
               </tr>
               <tr>
                 <td>
                   <p>Longitud: <span id="lonISS"></span>º</p>
                 </td>
-                <td>
-                  <p><span id="lonCREWDRAGON"></span>º</p>
-                </td>
+              
               </tr>
               <tr>
                 <td>
