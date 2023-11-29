@@ -3,7 +3,7 @@ const mymap = L.map('issmap').setView([0, 0], 3);
 const attribution =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
-const tilesUrl = 'http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg';
+const tilesUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tilesUrl, { attribution });
 tiles.addTo(mymap);
 
